@@ -226,6 +226,7 @@ if (AutoAscender === undefined)
 		},
 
 		//Actions
+		// Fibonacci numbers: 0, 1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89, 144, 233, 377, 610, 987, 1597, 2584
 		actions: {
 			autoAscend: {
 				variables: {
@@ -234,7 +235,7 @@ if (AutoAscender === undefined)
 				},
 				delay: 500,
 				action: function () {
-					if ((((Game.prestige + Game.ascendMeterLevel) >= 13) && Game.ascendMeterLevel >= 1) && !AutoAscender.actions.autoAscend.variables.cooldownEnabled) {
+					if ((((Game.prestige + Game.ascendMeterLevel) >= 34) && Game.ascendMeterLevel >= 1) && !AutoAscender.actions.autoAscend.variables.cooldownEnabled) {
 						AutoAscender.actions.autoAscend.variables.cooldownEnabled = true;
 						Game.Ascend(true);
 						setTimeout(
